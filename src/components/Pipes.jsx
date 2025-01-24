@@ -1,4 +1,3 @@
-// src/components/Pipes.jsx
 import React from "react";
 
 const Pipes = ({ pipes }) => {
@@ -6,7 +5,6 @@ const Pipes = ({ pipes }) => {
     <>
       {pipes.map((pipe, index) => (
         <React.Fragment key={index}>
-          {/* Top Pipe */}
           <div
             style={{
               position: "absolute",
@@ -14,10 +12,9 @@ const Pipes = ({ pipes }) => {
               top: 0,
               width: "50px",
               height: `${pipe.height}px`,
-              backgroundColor: "black", // Set top pipe color to black
+              backgroundColor: "black",
             }}
           ></div>
-          {/* Bottom Pipe */}
           <div
             style={{
               position: "absolute",
@@ -25,7 +22,7 @@ const Pipes = ({ pipes }) => {
               top: `${pipe.height + pipe.gap}px`,
               width: "50px",
               height: `calc(500px - ${pipe.height + pipe.gap}px)`,
-              backgroundColor: "black", // Set bottom pipe color to black
+              backgroundColor: "black", 
             }}
           ></div>
         </React.Fragment>

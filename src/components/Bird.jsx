@@ -1,4 +1,3 @@
-// src/components/Bird.jsx
 import React from "react";
 
 const Bird = ({ birdY }) => {

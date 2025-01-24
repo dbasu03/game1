@@ -1,4 +1,3 @@
-// src/components/Score.jsx
 import React from "react";
 
 const Score = ({ score }) => {
